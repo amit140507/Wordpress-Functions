@@ -18,3 +18,14 @@ Use this in Error
 jQuery("html, body").animate({ scrollTop: 0 }, "slow");
 jQuery(".notice-error").show(); 
 ```
+
+## 2) Wordpress Mail
+
+```
+$headers[] = 'From: Amit Singh < amit@singh.com >';
+$headers[] .= "Content-type: text/html";
+	$to = $email;
+	$subject = "Registration Confirmation ";
+  
+	$sent = wp_mail($to, $subject, $message,$headers );
+```
