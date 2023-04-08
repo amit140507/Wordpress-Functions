@@ -18,6 +18,12 @@ Use this in Error
 jQuery("html, body").animate({ scrollTop: 0 }, "slow");
 jQuery(".notice-error").show(); 
 ```
+Use this for hide the message
+```
+jQuery(".notice-dismiss").click(function(){
+jQuery(".notice-success").hide();
+jQuery(".notice-error").hide();
+ ```
 
 ## 2) Wordpress Mail
 
